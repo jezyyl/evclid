@@ -1,0 +1,89 @@
+.section-how__content {
+    flex-direction: column;
+    margin-bottom: 110px;
+    background: url('../../img/how-1.png');
+    background-size: 49.15%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.section-how__heading {
+    margin-bottom: 50px;
+}
+
+.section-how__list {
+    width: max-content;
+    gap: 43%;
+    margin-bottom: 46px;
+}
+
+.section-how__item {
+    flex: 0 0 auto;
+}
+
+.section-how__link {
+    color: var(--black-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section-how__heading-small {
+    color: var(--black-color);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    margin-bottom: 8px;
+}
+
+.section-how__desc {
+    max-width: 758px;
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+    margin-bottom: 18px;
+}
+
+.section-how__btn-container {
+    width: fit-content;
+    gap: 32px;
+    align-items: center;
+}
+
+.btn-left {
+    padding: 19px 38.5px;
+    transition: background-color .1s ease-in-out, border .1s ease-in-out;
+}
+
+.btn-left:hover {
+    background-color: var(--light-gold);
+    border: 1px solid var(--light-gold);
+}
+
+.btn-left:active {
+    background-color: var(--darker-gold);
+    border: 1px solid var(--darker-gold);
+}
+
+
+
+.btn-right {
+    border-radius: 16px;
+    border: 1px solid var(--black-color);
+    background: transparent;
+    color: var(--black-color);
+    transition: background-color .1s ease-in-out, border .1s ease-in-out, color .1s ease-in-out;
+}
+
+.btn-right:hover {
+    background-color: #666;
+    border: 1px solid #666;
+    color: var(--white-color);
+}
+
+.btn-right:active {
+    background-color: var(--black-color);
+    border: 1px solid var(--black-color);
+    color: var(--white-color);
+}

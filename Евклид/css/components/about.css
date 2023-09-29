@@ -15,7 +15,7 @@
 
 .section-about__container-content {
     margin-top: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 99px;
 }
 
 .section-about__content-left {
@@ -69,7 +69,19 @@
     border: 3px solid var(--accent-gold);
     height: 60px;
     padding: 19px 35px;
+    transition: background-color .1s ease-in-out, border .1s ease-in-out;
 }
+
+.button-about:hover {
+    background-color: var(--light-gold);
+    border: 3px solid var(--light-gold);
+}
+
+.button-about:active {
+    background-color: var(--darker-gold);
+    border: 3px solid var(--darker-gold);
+}
+
 
 .section-about__content-right {
   -webkit-box-orient: vertical;
@@ -86,7 +98,7 @@
     padding-top: 63px;
     padding-bottom: 64px;
     padding-right: 113px;
-    padding-left: 300px;
+    padding-left: 34.16%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;

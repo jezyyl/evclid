@@ -41,4 +41,15 @@
     align-items: center;
     flex-shrink: 0;
     border: var(--accent-gold);
+    transition: background-color .1s ease-in-out;
 }
+
+.section-hero__button:hover {
+    background-color: var(--light-gold);
+}
+
+.section-hero__button:active {
+    background-color: var(--darker-gold);
+}
+
+
