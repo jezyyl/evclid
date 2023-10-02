@@ -26,6 +26,20 @@
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
+    transition: color .3s ease-in-out, outline .3s ease-in-out;
+}
+
+.section-how__link:hover {
+    color: var(--light-gold);
+}
+
+.section-how__link:focus-visible {
+    outline: 2px solid var(--light-gold);
+    outline-offset: 5px;
+}
+
+.section-how__link:active {
+    color: var(--darker-gold);
 }
 
 .section-how__heading-small {
@@ -53,10 +67,15 @@
 
 .btn-left {
     padding: 19px 38.5px;
-    transition: background-color .1s ease-in-out, border .1s ease-in-out;
+    transition: background-color .3s ease-in-out, border .3s ease-in-out;
 }
 
 .btn-left:hover {
+    background-color: var(--light-gold);
+    border: 1px solid var(--light-gold);
+}
+
+.btn-left:focus-visible {
     background-color: var(--light-gold);
     border: 1px solid var(--light-gold);
 }
@@ -66,17 +85,21 @@
     border: 1px solid var(--darker-gold);
 }
 
-
-
 .btn-right {
     border-radius: 16px;
     border: 1px solid var(--black-color);
     background: transparent;
     color: var(--black-color);
-    transition: background-color .1s ease-in-out, border .1s ease-in-out, color .1s ease-in-out;
+    transition: background-color .3s ease-in-out, border .3s ease-in-out, color .3s ease-in-out;
 }
 
 .btn-right:hover {
+    background-color: #666;
+    border: 1px solid #666;
+    color: var(--white-color);
+}
+
+.btn-right:focus-visible {
     background-color: #666;
     border: 1px solid #666;
     color: var(--white-color);

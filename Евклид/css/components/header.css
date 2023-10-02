@@ -17,6 +17,15 @@
     justify-content: space-between;
 }
 
+.header__logo-img {
+    transition: outline .3s ease-in-out;
+}
+
+.header__logo-img:focus-visible {
+    outline: 2px solid var(--accent-gold);
+    outline-offset: 5px;
+}
+
 .header__nav {
     width: 74%;
     margin-right: 52px;
@@ -38,7 +47,7 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
-    transition: color .1s ease-in-out, border-bottom .1s ease-in-out, outline .1s ease-in-out;
+    transition: color .3s ease-in-out, border-bottom .3s ease-in-out, outline .3s ease-in-out;
 }
 
 .header__nav-link:hover {
@@ -64,7 +73,7 @@
     border: transparent;
     border-radius: 0;
     position: relative;
-    transition: outline .1s ease-in-out;
+    transition: outline .3s ease-in-out;
     outline-offset: 1px;
 }
 
@@ -80,11 +89,11 @@
 }
 
 .header__nav-search-button path {
-    transition: stroke .1s ease-in-out;
+    transition: stroke .3s ease-in-out;
 }
 
 .header__nav-search-button rect {
-    transition: fill .1s ease-in-out;
+    transition: fill .3s ease-in-out;
 }
 
 .header__nav-search-button:hover path {

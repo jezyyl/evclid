@@ -69,10 +69,15 @@
     border: 3px solid var(--accent-gold);
     height: 60px;
     padding: 19px 35px;
-    transition: background-color .1s ease-in-out, border .1s ease-in-out;
+    transition: background-color .3s ease-in-out, border .3s ease-in-out;
 }
 
 .button-about:hover {
+    background-color: var(--light-gold);
+    border: 3px solid var(--light-gold);
+}
+
+.button-about:focus-visible {
     background-color: var(--light-gold);
     border: 3px solid var(--light-gold);
 }

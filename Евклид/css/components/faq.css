@@ -17,6 +17,11 @@
     border-top: 1px solid #cacaca;
     border-bottom: 1px solid #cacaca;
     margin-bottom: -1px;
+    position: relative;
+}
+
+.section-faq__item ellipse {
+    transition: fill .3s ease-in-out;
 }
 
 .section-faq__content {
@@ -33,4 +38,69 @@
     font-size: 24px;
     line-height: 32px;
     color: var(--black-color);
+    transition: color .3s ease-in-out;
 }
+
+.section-faq__btn::before {
+    z-index: 1;
+    position: absolute;
+    content: "";
+    top: -1px;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    transition: border-top .3s ease-in-out, border-bottom .3s ease-in-out;
+}
+
+.section-faq__item svg {
+    transition: transform .3s ease-in-out  
+}
+
+/* hover */
+.section-faq__btn:hover::before {
+    border-top: 2px solid var(--accent-gold);
+    border-bottom: 2px solid var(--accent-gold);
+}
+
+.section-faq__btn:hover {
+    color: var(--accent-gold);
+}
+
+.section-faq__item:hover ellipse {
+    fill: var(--accent-gold);
+}
+   
+/* focus */
+.section-faq__btn:focus-visible::before {
+    border-top: 2px solid var(--accent-gold);
+    border-bottom: 2px solid var(--accent-gold);
+}
+
+.section-faq__btn:focus-visible {
+    color: var(--accent-gold);
+}
+
+.section-faq__item:focus-visible ellipse {
+    fill: var(--accent-gold);  /*не работает*/
+}
+
+/* active */
+.section-faq__btn:active::before {
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+}
+
+.section-faq__btn:active {
+    color: var(--black-color);
+}
+
+.section-faq__item:active ellipse {
+    fill: #cacaca;
+}
+
+.section-faq__item:active svg {
+    transform: rotate(45deg);
+}
+
+
+   

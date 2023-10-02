@@ -7,6 +7,12 @@
 
 .footer__logo {
     margin-bottom: 17px;
+    transition: outline .3s ease-in-out;
+}
+
+.footer__logo:focus-visible {
+    outline: 1px solid var(--accent-gold);
+    outline-offset: 5px;
 }
 
 .footer__left {
@@ -24,11 +30,53 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 36px; /* 200% */
+    transition: color .3s ease-in-out, outline .3s ease-in-out;
+}
+
+.footer__link:hover {
+    color: var(--light-gold);
+}
+
+.footer__link:focus-visible {
+    outline: 2px solid var(--light-gold);
+    outline-offset: 5px;
+}
+
+.footer__link:active {
+    color: var(--darker-gold);
 }
 
 .footer__social {
     gap: 25px;
 }
+
+.footer__icon-svg {
+    cursor: pointer;
+    transition: outline .3s ease-in-out;
+}
+
+.footer__svg path {
+    transition: fill .3s ease-in-out;
+}
+
+.footer__svg:hover path {
+    fill: var(--accent-gold);
+}
+
+.footer__svg:focus-visible path {
+    fill: #CACACA;
+}
+
+.footer__icon-svg:focus-visible {
+    outline: 2px solid var(--accent-gold);
+    outline-offset: 5px; 
+}
+
+
+.footer__svg:active path {
+    fill: var(--darker-gold);
+}
+
 
 .footer__center {
     flex-direction: column;
@@ -53,11 +101,25 @@
     background-color: #414141;
     border: #414141;
     border-radius: 16px;
-    color: #CACACA;
+    color: white;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px; /* 200% */
     padding: 14px 24px;
+    transition: background-color .3s ease-in-out;
+}
+
+placeholder {
+    color: #CACACA;
+    transition: color;
+}
+
+.form__input:hover {
+    background-color: #666;
+}
+
+.form__input:focus-visible {
+    background-color: #666;
 }
 
 .form__textarea {
@@ -74,6 +136,17 @@
     font-size: 16px;
     font-weight: 700;
     line-height: normal;
+    transition: background-color .3s ease-in-out, border .3s ease-in-out;
+}
+
+.form__btn:hover {
+    background-color: var(--light-gold);
+    border: 1px solid var(--light-gold);
+}
+
+.form__btn:active{
+    background-color: var(--darker-gold);
+    border: 1px solid var(--darker-gold);
 }
 
 .footer__right {
